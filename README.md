@@ -1,14 +1,14 @@
 ### Pull the image
 
 ```bash
-$ docker pull bufang/docker-snell
+docker pull bufang/docker-snell
 ```
 
 ### Start a container
 
 ```bash
 docker run -p 4231:4231 -p 4231:4231/udp -d \
---restart always --name=snell deercloud/snell
+--restart always --name=snell bufang/docker-snell
 ```
 
 ### Display config
