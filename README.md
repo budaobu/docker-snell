@@ -1,7 +1,11 @@
+### Latest version
+
+snell-server v1.1.1
+
 ### Pull the image
 
 ```bash
-docker pull bufang/docker-snell
+docker pull bufang/docker-snell:latest
 ```
 
 ### Start a container
