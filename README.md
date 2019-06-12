@@ -11,7 +11,7 @@ docker pull bufang/docker-snell:latest
 ### Start a container
 
 ```bash
-docker run -p 4231:4231 -p 4231:4231/udp -d \
+docker run -p 8388:8388 -p 8388:8388/udp -d \
 --restart always --name=snell bufang/docker-snell
 ```
 
