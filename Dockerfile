@@ -1,6 +1,6 @@
-FROM alpine:edge as builder
+FROM deercloud/snell
 
-LABEL maintainer="metowolf <i@i-meto.com>"
+LABEL maintainer="bufang"
 
 ENV SNELL_VERSION 1.1.1
 
@@ -14,9 +14,9 @@ RUN apk update \
   && mv snell-server /usr/local/bin/
 
 
-FROM alpine:3.9
+FROM deercloud/snell
 
-LABEL maintainer="metowolf <i@i-meto.com>"
+LABEL maintainer="bufang"
 
 ENV GLIBC_VERSION 2.29-r0
 
