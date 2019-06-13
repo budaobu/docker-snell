@@ -1,4 +1,4 @@
-FROM ubuntu:bionic as builder
+FROM alpine:edge as builder
 
 
 
@@ -14,7 +14,7 @@ RUN apk update \
   && mv snell-server /usr/local/bin/
 
 
-FROM ubuntu:18.04
+FROM alpine:3.9
 
 
 
