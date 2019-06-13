@@ -1,6 +1,6 @@
-FROM alpine:edge as builder
+FROM ubuntu:bionic as builder
 
-LABEL maintainer="metowolf <i@i-meto.com>"
+
 
 ENV SNELL_VERSION 1.1.1
 
@@ -14,9 +14,9 @@ RUN apk update \
   && mv snell-server /usr/local/bin/
 
 
-FROM alpine:3.9
+FROM ubuntu:18.04
 
-LABEL maintainer="metowolf <i@i-meto.com>"
+
 
 ENV GLIBC_VERSION 2.29-r0
 
