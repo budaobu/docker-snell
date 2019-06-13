@@ -1,6 +1,6 @@
 ### Latest version
 
-snell-server v1.1.1
+update to snell-server v1.1.1
 
 ### Pull the image
 
