@@ -1,6 +1,6 @@
 FROM alpine:edge as builder
 
-
+LABEL maintainer="metowolf <i@i-meto.com>"
 
 ENV SNELL_VERSION 1.1.1
 
@@ -16,7 +16,7 @@ RUN apk update \
 
 FROM alpine:3.9
 
-
+LABEL maintainer="metowolf <i@i-meto.com>"
 
 ENV GLIBC_VERSION 2.29-r0
 
